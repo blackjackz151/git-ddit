@@ -2,6 +2,22 @@
 
 A distributed and decentralised issue tracking system for Git.
 
+## Dissertation Abstract
+
+Git is a distributed version control system used primarily for source-code management. One of the 
+main features of Git is that it is decentralised. Each repository is self-contained, and data can be 
+synchronised between repositories by pushing and pulling, without the need for a central repository. 
+
+GitHub is a popular Git repository hosting service that developers commonly use for the convenience 
+of sharing changes to the project codebase over the internet. Services like GitHub often offer their 
+own features such as issue tracking and continuous integration pipelines. The problem with using an 
+issue tracking system on GitHub or a similar service is that it breaks the decentralised nature of Git.
+
+This project aims to create an ITS that takes advantage of Git’s distributed and decentralised nature. 
+Issues will exist within the self-contained Git repository giving every developer a full copy of the issue 
+history. These issues will then be able to be pushed, pulled, merged, and synchronised along with all 
+the other data stored in the repository.
+
 
 ## How to use
 To use a command the basic format: `git ddit <command> [args]` is used. An example is `git ddit show –id myissue`  
