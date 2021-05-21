@@ -1,0 +1,22 @@
+DDIT - git ddit tag
+
+Important: Use quotation marks for args with whitespace, multiple tags can be added and removed at once separate with comma
+
+Usage:
+  git ddit tag <[-id <hash> <--add <tag,..> | --remove <tag,..> >] [--help]>
+
+Description:
+  Adds or removes a tag to an issue. A tag is used to categorise the issue e.g. “bug”, “feature” or “enhancement”.
+
+Options:
+  -a, --add <tag>             Add a tag to the issue
+  -h, --help                  Show this help screen
+  -id <hash>                  ID of the issue to add tag to
+  -rm, --remove <tag>         Remove the tag from the issue
+
+Example:
+  git ddit tag -id 645bd8a8a4b9c7e158723a5826a40d1cc7a08b3f7d382f27ab90c9fdc1f881e6 -a "bug, feature"
+  This will add the tags "bug" and "feature" to the issue.
+
+  git ddit tag -id 645bd8a8a4b9c7e158723a5826a40d1cc7a08b3f7d382f27ab90c9fdc1f881e6 -rm "bug"
+  This will remove the tag "bug" from the issue.

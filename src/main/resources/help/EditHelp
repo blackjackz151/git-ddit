@@ -1,0 +1,29 @@
+DDIT - git ddit edit
+
+Important: Use quotation marks for args with whitespace
+
+Usage:
+  git ddit edit <[-id <hash> <--title <title> | --desc <desc> | --status <open|close> >] [--help]>
+
+Description:
+  Updates the specified attribute of an issue with the new specified value.
+
+Options:
+  -d, --desc <desc>           Update description of issue
+  -h, --help                  Show this help screen
+  -id <hash>                  ID of the issue to update
+  -s, --status <status>       Update status of the issue
+  -t, --title <title>         Update title of issue
+
+
+Example:
+  git ddit edit -id 645bd8a8a4b9c7e158723a5826a40d1cc7a08b3f7d382f27ab90c9fdc1f881e6 -d "new description"
+  This will update the description of the issue to be "new description"
+
+  git ddit edit -id 645bd8a8a4b9c7e158723a5826a40d1cc7a08b3f7d382f27ab90c9fdc1f881e6 -t "new title"
+  This will update the title of the issue to be "new title"
+
+  git ddit edit -id 645bd8a8a4b9c7e158723a5826a40d1cc7a08b3f7d382f27ab90c9fdc1f881e6 -s close
+  This will update the status of the issue to be closed
+
+

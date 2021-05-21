@@ -1,0 +1,32 @@
+DDIT - git ddit nickname
+
+Important: Use quotation marks for args with whitespace
+
+Usage:
+  git ddit nickname [<--add <hash> <nickname> | --update <hash | nickname> <new nickname> | --remove <hash|nickname> > | --list] [--help]>
+
+Description:
+  Adds nicknames to issues. Nicknames make it easier to identify issues to users compared to remembering a hash.
+
+Options:
+  -a,  --add <hash> <nickname>                         Add a nickname to an issue
+  -h,  --help                                          Show this help screen
+  -ls, --list                                          List all the nicknames for every issue
+  -u,  --update <hash | nickname> <new nickname>       Update nickname of an issue
+  -rm, --remove <hash | nickname>                      Remove the nickname of an issue
+
+
+Example:
+  git ddit nickname --add 645bd8a8a4b9c7e158723a5826a40d1cc7a08b3f7d382f27ab90c9fdc1f881e6 nickname
+  This will add a nickname "nickname" to the issue
+
+  git ddit nickname --update 645bd8a8a4b9c7e158723a5826a40d1cc7a08b3f7d382f27ab90c9fdc1f881e6 "new nickname"
+  This will update the nickname of the issue to "new nickname"
+
+  git ddit nickname --remove 645bd8a8a4b9c7e158723a5826a40d1cc7a08b3f7d382f27ab90c9fdc1f881e6
+  git ddit nickname --remove nickname
+  This will remove the nickname from the issue
+
+  git ddit nickname --list
+  This will list all the nicknames for issues in the repository
+

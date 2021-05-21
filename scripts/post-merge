@@ -1,0 +1,11 @@
+#!/bin/bash
+
+EMAIL=`git config user.email`
+issues=`git ddit ls -q assignee:$EMAIL`
+
+if [ -z "$issues" ];then
+  echo "No issues assigned to you"
+else
+  echo "Issues assigned to you:"
+  echo $issues
+fi

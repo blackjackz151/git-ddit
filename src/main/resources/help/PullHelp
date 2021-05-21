@@ -1,0 +1,15 @@
+DDIT - git ddit pull
+
+Usage:
+  git ddit pull <[-r <remote>] [--help]>
+
+Description:
+  Pulls issues on remote. If there is a merge conflict an editor will open for the user to resolve.
+
+Options:
+  -r, --remote <remote>     Remote location - to pull from
+  -h, --help    Show this help screen
+
+Example:
+  git ddit pull /home/user/project/
+  This will pull the issues that are stored on the remote

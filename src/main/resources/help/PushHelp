@@ -1,0 +1,15 @@
+DDIT - git ddit push
+
+Usage:
+  git ddit push <[-r <remote>] [--help]>
+
+Description:
+  Pushes issues to a remote. Changes will be rejected if not fast-forward merge.
+
+Options:
+  -r, --remote <remote>     Remote location - to push to
+  -h, --help    Show this help screen
+
+Example:
+  git ddit push /home/user/project/
+  This will push the issues that are stored to the remote

@@ -1,0 +1,15 @@
+DDIT - git ddit delete
+
+Usage:
+  git ddit delete <[-id <hash>] [--help]>
+
+Description:
+  Deletes an issue from the issue repository.
+
+Options:
+  -id <arg>     ID of issue to delete
+  -h, --help    Show this help screen
+
+Example:
+  git ddit delete 645bd8a8a4b9c7e158723a5826a40d1cc7a08b3f7d382f27ab90c9fdc1f881e6
+  This will delete the issue that has the unique hash

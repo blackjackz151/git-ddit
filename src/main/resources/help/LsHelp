@@ -1,0 +1,47 @@
+DDIT - git ddit ls
+
+Important: Separate conditions with a space, values with white space and/or dates should be surrounded by quotation marks
+
+Usage:
+  git ddit ls [-q <query>...] [--verbose] [-csv] [--help]
+
+Description:
+  Lists issues in the issue repository. Can add a query to filter issues, displaying only issues that match the conditions.
+
+Options:
+  -csv <path>                          Creates a csv containing issue information
+  -csvc <path>, --csv-comments <path>  Creates a csv containing comment information
+  -q, --query <arg>...                 Description for new issue
+  -v, --verbose                        Show full details of issues
+
+Conditions:
+  Format of condition is: qualifier:value
+
+  Qualifiers are:
+    title, description, status, tag, assignee, watcher, creator, comment, created, edited
+
+  Value format varies depending on qualifier:
+    title:"title contains"            This will display issues that contain the value string in the qualifier
+    desc:"description contains"
+    tag:"tag"
+
+    status:open | status:closed      These are the two options for the status qualifier - displaying issues with open/closed status
+
+    watcher:name | watcher:email     Displays issues with a watcher/creator/assignee with the specified name or email
+    creator:name | creator:email
+    assignee:name| assignee:email
+
+    For qualifiers "created" and "edited" use of <, >, <=, and >= can be used:
+    If using <, >, <=, or >= then must be surrounded by " "
+    created:"[< | > | >= | <=]dd/MM/yyyy"     Displays issues created/edited on the date given if no equality operator given else will display accordingly
+     edited:"[< | > | >= | <=]dd/MM/yyyy"
+
+Example:
+  git ddit ls -q title:hello desc:world status:open
+  This will show issues with title: hello, description: world and a status of open.
+
+  git ddit ls
+  This will show all issues
+
+  git ddit ls -q created:<03/02/2019 title:"hello world"
+  This will show issues created before 03/02/2019 with the string "hello world" in the title

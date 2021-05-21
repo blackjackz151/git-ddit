@@ -1,0 +1,15 @@
+DDIT - git ddit show
+
+Usage:
+  git ddit show <[-id <hash>] [--help]>
+
+Description:
+  Shows all stored data in an issue including comments
+
+Options:
+  -id <arg>     ID of issue to show
+  -h, --help    Show this help screen
+
+Example:
+  git ddit show 645bd8a8a4b9c7e158723a5826a40d1cc7a08b3f7d382f27ab90c9fdc1f881e6
+  This will show all of the issues data

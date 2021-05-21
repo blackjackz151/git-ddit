@@ -1,0 +1,20 @@
+DDIT - git ddit attach
+
+Usage:
+  git ddit attach [-id <hash> <--add <path-to-file> | --remove <attachment-name> >] [--help]
+
+Description:
+  Adds a file to this issue as an attachment, this can be anything such as an image.
+
+Options:
+  -a, --add <path-to-file>         Add a file to the issue
+  -h, --help                       Show this help screen
+  -id <hash>                       ID of issue to add attachment to
+  -rm, --remove <attachment-name>  Remove a file from issue
+
+Example:
+  git ddit attach -id 645bd8a8a4b9c7e158723a5826a40d1cc7a08b3f7d382f27ab90c9fdc1f881e6 -a /home/diagram.jpg
+  This will add the jpg file "diagram" to the issue
+
+  git ddit attach -id 645bd8a8a4b9c7e158723a5826a40d1cc7a08b3f7d382f27ab90c9fdc1f881e6 -rm diagram.jpg
+  This will remove the file with name diagram.jpg from the issue

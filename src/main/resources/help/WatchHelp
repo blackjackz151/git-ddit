@@ -1,0 +1,25 @@
+DDIT - git ddit watch
+
+Important: Use quotation marks for args with whitespace
+
+Usage:
+  git ddit watch [-id <hash> <--list | --add | --remove> [--name <name> --email <email>]] [--help]
+
+Description:
+  Adds the specified user as a watcher to the issue. A watcher is someone who will receive notifications (if setup) about any changes to the issue.
+
+Options:
+  -a, --add             Tell system to add the user to an issue
+  -e, --email           Email of the user being added
+  -h, --help            Show this help screen
+  -id <hash>            ID of issue to add watcher to
+  -ls, --list           List all assignees for an issue
+  -n, --name            Name of user being added
+  -rm, --remove         Tell system to remove the user from an issue
+
+Example:
+  git ddit watch -id 645bd8a8a4b9c7e158723a5826a40d1cc7a08b3f7d382f27ab90c9fdc1f881e6 -a --name "jack" --email "my@email.com"
+  This will add the user with name jack and email my@email.com to the issue as a watcher.
+
+  git ddit watch -id 645bd8a8a4b9c7e158723a5826a40d1cc7a08b3f7d382f27ab90c9fdc1f881e6 -rm --name "jack" --email "my@email.com"
+  This will remove the user with name jack and email my@email.com from the issue as a watcher.

@@ -1,0 +1,10 @@
+#!/bin/bash
+# Usage: git ddit
+
+if [ -d .git ]; then
+  java -jar /home/jack/Documents/ddit.jar "$@"
+
+else
+  git rev-parse --git-dir 2> /dev/null;
+  echo "Not in a git directory";
+fi;

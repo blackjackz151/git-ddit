@@ -1,0 +1,29 @@
+DDIT - A Distributed and Decentralised Issue Tracking System (ITS)
+
+Usage:
+  git ddit <command> [<args>] [--help]
+
+Commands are:
+
+Initialising ITS
+  init     Create an issues branch in the repository
+
+Creation/deletion of issues
+  delete   Delete an issue
+  new      Create a new issue
+
+Examine issues
+  ls       List issues in the repository
+  show     Display the full details of a single issue
+
+Collaborate
+  pull     Fetch and merge issues from a remote repository
+  push     Update a remote with associated issues
+
+Update issues
+  assign   Assign an issue to a user
+  attach   Add an attachment to an issue e.g. an image
+  comment  Comment on an issue
+  tag      Add a tag to an issue e.g. "Bug"
+  update   Update the title, description or status of an issue
+  watcher  Add a watcher to an issue

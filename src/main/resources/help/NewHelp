@@ -1,0 +1,18 @@
+DDIT - git ddit new
+
+Important: Use quotation marks for args with whitespace
+
+Usage:
+  git ddit new <[-t <title> -d <desc>] [--help]>
+
+Description:
+  Creates a new issue on the issue branch with given title and description with an open status.
+
+Options:
+  -d, --desc <arg>    Description for new issue
+  -h, --help          Show this help screen
+  -t, --title <arg>   Title for new issue
+
+Example:
+  git ddit new -t "hello" -d "world"
+  This will create a new issue with title: hello and description: world

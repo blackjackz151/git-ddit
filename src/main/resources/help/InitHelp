@@ -1,0 +1,13 @@
+DDIT - git ddit init
+
+Usage:
+  git ddit init [-h | --help]
+
+Description:
+  Creates an empty issues branch inside an existing Git repository.
+
+Options:
+  -h, --help   Show this help screen
+
+Example:
+  git ddit init
