@@ -23,6 +23,8 @@ the other data stored in the repository.
 To use a command the basic format: `git ddit <command> [args]` is used. An example is `git ddit show –id myissue`  
 For the full list of commands and how to use them read [here.](https://github.com/blackjackz151/git-ddit/tree/master/src/main/resources/help)
 
+Supervisor and second marker were unable to attend project demonstration so a video of it is available: https://youtu.be/I0lz2hGa4H8
+
 
 ## How to install
 ### Obtaining JAR
