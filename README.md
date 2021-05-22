@@ -21,7 +21,7 @@ the other data stored in the repository.
 
 ## How to use
 To use a command the basic format: `git ddit <command> [args]` is used. An example is `git ddit show –id myissue`  
-For the full list of commands and how to use them read [here.](https://gitlab.cis.strath.ac.uk/rkb16165/ddit/tree/master/src/main/resources/help)
+For the full list of commands and how to use them read [here.](https://github.com/blackjackz151/git-ddit/tree/master/src/main/resources/help)
 
 
 ## How to install
@@ -43,7 +43,7 @@ To execute the JAR the Java Runtime Environment version 10+ must be installed (t
 
 Other than the JRE there are no other prerequisites to use the JAR. However, it is **extremely** recommended to have the users name and email specified in the `.gitconfig` file located in the user’s home directory. Usually this will already be set up as the JAR is used from within Git repositories and to obtain a project’s repository, users will have already set up Git. 
 
-Next create a shell script named `git-ddit` in a directory of user’s choice or download a copy of the script [here](https://gitlab.cis.strath.ac.uk/rkb16165/ddit/blob/master/git-ddit). 
+Next create a shell script named `git-ddit` in a directory of user’s choice or download a copy of the script [here](https://github.com/blackjackz151/git-ddit/blob/master/git-ddit). 
 
 Inside this script enter the following (changing the “path/to/jar” to the fully qualified file path of the JAR): 
 ```bash
