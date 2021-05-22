@@ -1,4 +1,4 @@
-# ddit
+# git ddit
 
 A distributed and decentralised issue tracking system for Git.
 
